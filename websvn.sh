@@ -59,3 +59,14 @@ cd /etc/apache2/
 mkdir conf.d
 apt-get -y install websvn
 nano /etc/websvn/svn_deb_conf.inc
+nano /etc/apache2/mods-available/dav_svn.conf
+# <Location /svn>  take out the #
+# DAV svn take out the #
+# SVNParentPath /var/lib/svn  take out the #
+# </Location> take out the #
+#  <LimitExcept GET PROPFIND OPTIONS REPORT> take out #
+#    Require valid-user take out #
+#  </LimitExcept> take out #
+#  AuthType Basic  take out #
+#  AuthName "Subversion Repository" take out #
+#  AuthUserFile /etc/apache2/dav_svn.passwd take out #
