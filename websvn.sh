@@ -30,6 +30,8 @@ svn co svn+ssh://example.com/var/svn-repos/project_zen/trunk testcheckout
 svnlook tree /var/svn-repos/project_zen/
 a2enmod dav
 a2enmod dav_svn
+
+dpkg-reconfigure websvn
 htpasswd -c /etc/apache2/dav_svn.passwd user1
 htpasswd -c /etc/apache2/dav_svn.passwd root
 nano /etc/apache2/mods-available/dav_svn.conf
