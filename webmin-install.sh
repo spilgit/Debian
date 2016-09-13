@@ -8,4 +8,5 @@ echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/
 echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib" >> /etc/apt/sources.list
 apt-get update
 apt-get -y install webmin
+/usr/share/webmin/changepass.pl /etc/webmin root webmin
 #
